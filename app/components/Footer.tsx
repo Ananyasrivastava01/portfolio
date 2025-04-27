@@ -65,7 +65,6 @@ const Footer: React.FC<FooterProps> = ({ socialLinks }) => {
               }}
             >
               <div className="flex items-center">
-                <img src="/ucefLogo.png" alt="Logo" className="h-14 w-14" />
                 <span className="text-2xl font-bold gradient-text bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
                   Ananya Srivastava
                 </span>

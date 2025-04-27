@@ -64,8 +64,17 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
   //   return `https://picsum.photos/seed/${seed}/600/400`;
   // };
   const getProjectImage = (title: string) => {
-  const imageName = title.toLowerCase().replace(/\s+/g, '-') + '.png';
-  return `/images/${imageName}`;
+    const imageMap: Record<string, string> = {
+      'Trip Planning Website': 'trip-planning-website.png',
+      'Notes Making App': 'notes-making-app.png',
+      'Food Ordering Website': 'food-ordering-website.png',
+      'Weather Dashboard': 'weather-dashboard.png',
+      'Rock Paper Scissor Game': 'rock-paper-scissor-game.png',
+      'Pipeline Data Visualization Dashboard': 'pipeline-data-visualization-dashboard.png',
+      'Naukari Paao': 'naukari-paao.png',
+      'Car Rental System': 'car-rental-system.png'
+    };
+    return `/images/${imageMap[title] || 'default.png'}`;
   };
 
 
